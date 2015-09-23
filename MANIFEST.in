@@ -1,6 +1,6 @@
 recursive-include django_isomorphic/static *
 recursive-include django_isomorphic/templates *
-recursive-include javascript *
+recursive-include django_isomorphic/javascript *
 include README.md
 include setup.cfg
 recursive-exclude * __pycache__
