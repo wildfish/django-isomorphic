@@ -2,6 +2,7 @@
 
 cd ./tests/templates/
 npm install react
+make
 cd ..
 cd ..
 

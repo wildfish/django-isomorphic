@@ -3,7 +3,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
 
 require("./src/template-server");
 
-},{"./src/template-server":156}],2:[function(require,module,exports){
+},{"./src/template-server":158}],2:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -19601,6 +19601,53 @@ if ("production" !== process.env.NODE_ENV) {
 module.exports = warning;
 
 },{"./emptyFunction":115}],156:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _templateLoader = require("./template-loader");
+
+var renderer = {
+    render: function render(templatePath, context, request) {
+        var Component = _templateLoader.loader.load(templatePath);
+        context._request = request;
+        return _react2["default"].renderToStaticMarkup(Component(context));
+    }
+};
+
+exports.renderer = renderer;
+
+},{"./template-loader":157,"react":"react"}],157:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var loader = {
+    load: function load(templatePath) {
+        var template = require(templatePath);
+        return _react2["default"].createFactory(template);
+    }
+};
+
+exports.loader = loader;
+
+},{"react":"react"}],158:[function(require,module,exports){
 'use strict';
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
@@ -19612,6 +19659,8 @@ var _net2 = _interopRequireDefault(_net);
 var _fs = require('fs');
 
 var _fs2 = _interopRequireDefault(_fs);
+
+var _rendererReactReactTemplateRenderer = require('./renderer/react/react-template-renderer');
 
 var reactRendererPath = './renderer/react/react-template-renderer.js';
 
@@ -19630,7 +19679,7 @@ var getOptions = function getOptions() {
     var options = getArgsAsDict();
 
     if (options.renderer === undefined) {
-        options.renderer = require(reactRendererPath).renderer;
+        options.renderer = _rendererReactReactTemplateRenderer.renderer;
     } else {
         options.renderer = require(options.renderer);
     }
@@ -19680,7 +19729,7 @@ var serve = function serve() {
 
 serve();
 
-},{"fs":undefined,"net":undefined}],"react":[function(require,module,exports){
+},{"./renderer/react/react-template-renderer":156,"fs":undefined,"net":undefined}],"react":[function(require,module,exports){
 module.exports = require('./lib/React');
 
 },{"./lib/React":29}]},{},[1]);

@@ -1,7 +1,9 @@
-import net from 'net';
-import fs from 'fs';
+import net from 'net'
+import fs from 'fs'
+import {renderer} from './renderer/react/react-template-renderer'
 
 const reactRendererPath = './renderer/react/react-template-renderer.js';
+
 
 
 const getArgsAsDict = () => {
@@ -19,7 +21,7 @@ const getOptions = () => {
     const options = getArgsAsDict();
 
     if (options.renderer === undefined) {
-        options.renderer = require(reactRendererPath).renderer;
+        options.renderer = renderer;
     } else {
         options.renderer = require(options.renderer);
     }
