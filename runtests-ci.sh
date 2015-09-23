@@ -1,11 +1,5 @@
 #!/usr/bin/env bash
 
-# Build js
-cd ./javascript
-npm install
-npm run build
-cd ..
-
 cd ./tests/templates/
 npm install react
 cd ..

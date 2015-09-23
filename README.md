@@ -6,6 +6,9 @@ Use Django 1.8 if you want to use multiple template engines.
 
 It's important to know that the context is available on the client side, so putting sensitive data in the context is a bad idea.
 
+The template server is using a Unix domain socket. 
+This means that the server will not run on windows, and the server is not accessible outside of the machine it's running on.
+
 
 ## Why?
 
@@ -44,8 +47,10 @@ Path to the unix domain socket. Default is `/tmp/template-server.sock`
 
 ## Usage
 
-*Note* ES6 templates needs to be "transpiled" as babel-node is not for production use.
+*Note* ES6 templates needs to be "transpiled".
 
+The template server starts automatically, this can be disabled by setting `DJANGO_ISOMORPHIC_AUTOSTART` to False.
+To manually start the server run `node /path/to/django-isomorphic/javascript/dist/template-server.js`.
 
 
 ### Using as part of a Django template
