@@ -1,5 +1,9 @@
 # Django JavaScript template engine
 
+![https://travis-ci.org/wildfish/django-isomorphic.svg](https://travis-ci.org/wildfish/django-isomorphic.svg)
+[![codecov.io](http://codecov.io/github/wildfish/django-isomorphic/coverage.svg?branch=master)](http://codecov.io/github/wildfish/django-isomorphic?branch=master)
+
+
 Use Django 1.8 if you want to use multiple template engines.
 
 *Note* The server has to be restarted for template updates as the templates are cached on the template server if you are using React.

@@ -1,0 +1,10 @@
+[report]
+omit =
+    *__init__*
+    *apps.py
+
+
+exclude_lines =
+    def start
+    def __str__
+    def terminate
