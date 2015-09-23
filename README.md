@@ -52,7 +52,7 @@ Path to the unix domain socket. Default is `/tmp/template-server.sock`
 
 In a template:
 
-    {% load jsx %}
+    {% load djangojs %}
     ...
     {% include_js 'foo.js' bar='hello' baz='world' %}
 
