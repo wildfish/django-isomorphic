@@ -1,0 +1,17 @@
+{% load static djangojs %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>This is a Django template</h1>
+
+{% include_js 'transpiled/base.js' %}
+
+<script type="text/javascript" src="/static/js/dist/vendor.js"></script>
+<script type="text/javascript" src="/static/js/dist/demo.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+    "name": "django-isomorphic",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "watch": "babel ./src --out-dir ./dist/ --watch"
+    },
+    "author": "Jonas Hagstedt <hagstedt@gmail.com> (https://github.com/jonashagstedt)",
+    "license": "BSD",
+    "dependencies": {
+        "react": "^0.13.3"
+    },
+    "browserify": {
+        "transform": [
+            [
+                "babelify",
+                {
+                    "blacklist": [
+                        "regenerator"
+                    ]
+                }
+            ]
+        ]
+    },
+    "devDependencies": {
+        "babel": "^5.8.23",
+        "babelify": "^6.3.0"
+    }
+}
