@@ -35,7 +35,7 @@ if sys.argv[-1] == 'publish':
     print('  git push --tags')
     shutil.rmtree('dist')
     shutil.rmtree('build')
-    shutil.rmtree('django_star_ratings.egg-info')
+    shutil.rmtree('django_isomorphic.egg-info')
     sys.exit()
 
 
@@ -50,7 +50,7 @@ setup(
     url='https://github.com/wildfish/django-isomorphic',
     author='Jonas Hagstedt',
     author_email='jonas@wildfish.com',
-    keywords='ratings',
+    keywords='django isomorphic',
     install_requires=[
         'Django >= 1.8, <= 1.9'
     ],
