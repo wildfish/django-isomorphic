@@ -14,6 +14,7 @@ const getArgsAsDict = () => {
     return commandArgs;
 };
 
+
 const getOptions = () => {
     const options = getArgsAsDict();
 
@@ -71,4 +72,3 @@ const serve = () => {
 
 
 serve();
-
