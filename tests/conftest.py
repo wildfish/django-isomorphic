@@ -5,7 +5,6 @@ def pytest_configure():
 
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
     settings.configure(
         DEBUG_PROPAGATE_EXCEPTIONS=True,
         DATABASES={'default': {'ENGINE': 'django.db.backends.sqlite3',
@@ -16,7 +15,7 @@ def pytest_configure():
         STATIC_URL='/static/',
         ROOT_URLCONF='tests.urls',
 
-        TEMPLATES = [
+        TEMPLATES=[
             {
                 'BACKEND': 'django_isomorphic.template.backend.JsTemplates',
                 'DIRS': [
@@ -25,9 +24,9 @@ def pytest_configure():
             }
         ],
 
-        DJANGO_ISOMORPHIC_AUTOSTART = False,
-        DJANGO_ISOMORPHIC_SOCKET_PATH = join(BASE_DIR, 'template-server.sock'),
-        TEMPLATE_DIR = join(BASE_DIR, 'tests', 'templates'),
+        DJANGO_ISOMORPHIC_AUTOSTART=False,
+        DJANGO_ISOMORPHIC_SOCKET_PATH=join(BASE_DIR, 'template-server.sock'),
+        TEMPLATE_DIR=join(BASE_DIR, 'tests', 'templates'),
 
         MIDDLEWARE_CLASSES=(
             'django.middleware.common.CommonMiddleware',

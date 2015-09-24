@@ -45,6 +45,7 @@ def get_paginated_data(page_num=1, paginate_by=3):
 
     return data
 
+
 class DataListApi(View):
     def get(self, request, **kwargs):
         page_num = request.GET.get('page')
