@@ -2,9 +2,6 @@ import net from 'net'
 import fs from 'fs'
 import {renderer} from './renderer/react/react-template-renderer'
 
-const reactRendererPath = './renderer/react/react-template-renderer.js';
-
-
 
 const getArgsAsDict = () => {
     const commandArgs = {};
@@ -67,7 +64,7 @@ const serve = () => {
     server.listen(socketPath, () => {
         console.log('=======================');
         console.log('Template server running');
-        console.log('Socket: ' + socketPath);
+        console.log('Socket: ' + socketPath  );
         console.log('=======================');
     });
 };
