@@ -23,6 +23,5 @@ var renderer = {
     }
 };
 
-
 module.exports = renderer;
 ```
