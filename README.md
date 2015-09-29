@@ -15,7 +15,7 @@ This means that the server will not run on windows, and the server is not access
 ## Why?
 
 There are few easy to use libraries for rendering JavaScript server side for Django.
-The aim was to create a solution that requires as little setup as possible and performs well.
+The aim is to create a solution that requires as little setup as possible and performs well.
 
 
 ## Docs
