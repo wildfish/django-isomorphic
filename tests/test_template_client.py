@@ -1,5 +1,5 @@
 from django.test import TestCase
-from django_isomorphic.client import template_client
+from isomorphic.client import template_client
 from django.conf import settings
 from os.path import join
 

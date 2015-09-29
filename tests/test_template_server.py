@@ -1,5 +1,5 @@
 from django.test import TestCase
-from django_isomorphic.server.template_server import TemplateServer
+from isomorphic.server.template_server import TemplateServer
 
 
 class TestTemplateServer(TestCase):

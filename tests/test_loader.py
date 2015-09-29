@@ -1,8 +1,8 @@
 from django.conf import settings
 from django.template import TemplateDoesNotExist
 from django.test import TestCase
-from django_isomorphic.template.engine import JsEngine
-from django_isomorphic.template.loaders import JsLoader
+from isomorphic.template.engine import JsEngine
+from isomorphic.template.loaders import JsLoader
 
 
 class TestLoader(TestCase):

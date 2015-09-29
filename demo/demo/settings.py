@@ -38,7 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'django_isomorphic',
+    'isomorphic',
     'demo',
 )
 
@@ -70,7 +70,7 @@ TEMPLATES = [
         },
     },
     {
-        'BACKEND': 'django_isomorphic.template.backend.JsTemplates',
+        'BACKEND': 'isomorphic.template.backend.JsTemplates',
         'DIRS': [
             os.path.join(BASE_DIR, 'static/js')
         ]

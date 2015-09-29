@@ -1,6 +1,6 @@
 from django.conf import settings
 from django.test import TestCase
-from django_isomorphic.template.backend import JsTemplates, JsTemplate
+from isomorphic.template.backend import JsTemplates, JsTemplate
 
 
 class TestEngine(TestCase):

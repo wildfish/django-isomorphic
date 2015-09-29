@@ -20,14 +20,14 @@ The aim was to create a solution that requires as little setup as possible and p
 
 ## Installation
 
-To auto start the server add `django_isomorphic` to `INSTALLED_APPS`
+To auto start the server add `isomorphic` to `INSTALLED_APPS`
 
-Add `'django_isomorphic.template.backend.JsTemplates'` to the `TEMPLATES` setting
+Add `'isomorphic.template.backend.JsTemplates'` to the `TEMPLATES` setting
 
     TEMPLATES = [
         ...
         {
-            'BACKEND': 'django_isomorphic.template.backend.JsTemplates',
+            'BACKEND': 'isomorphic.template.backend.JsTemplates',
             'DIRS': [
                 join(BASE_DIR, 'static/js/src')
             ]

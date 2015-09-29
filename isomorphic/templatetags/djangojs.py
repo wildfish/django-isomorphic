@@ -1,7 +1,7 @@
 from django import template
 from django.conf import settings
-from django_isomorphic.template.backend import JsTemplate
-from django_isomorphic.template.loaders import JsLoader
+from ..template.backend import JsTemplate
+from ..template.loaders import JsLoader
 
 register = template.Library()
 loader = JsLoader(engine=None)
@@ -13,7 +13,7 @@ class JsMissingTemplateDirException(Exception):
 
 def _get_template_dirs():
     for t in settings.TEMPLATES:
-        if t['BACKEND'] == 'django_isomorphic.template.backend.JsTemplates':
+        if t['BACKEND'] == 'isomorphic.template.backend.JsTemplates':
             return t['DIRS']
     return None
 

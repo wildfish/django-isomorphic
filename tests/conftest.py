@@ -17,7 +17,7 @@ def pytest_configure():
 
         TEMPLATES=[
             {
-                'BACKEND': 'django_isomorphic.template.backend.JsTemplates',
+                'BACKEND': 'isomorphic.template.backend.JsTemplates',
                 'DIRS': [
                     join(BASE_DIR, 'tests', 'templates')
                 ]
@@ -44,7 +44,7 @@ def pytest_configure():
             'django.contrib.staticfiles',
 
             'tests',
-            'django_isomorphic',
+            'isomorphic',
         ),
         PASSWORD_HASHERS=(
             'django.contrib.auth.hashers.SHA1PasswordHasher',

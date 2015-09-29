@@ -8,7 +8,7 @@ template_server = TemplateServer()
 
 
 class DjangoJsxConfig(AppConfig):
-    name = 'django_isomorphic'
+    name = 'isomorphic'
     verbose_name = "Django JSX"
 
     def ready(self):

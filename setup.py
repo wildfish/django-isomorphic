@@ -19,7 +19,7 @@ def get_version(package):
     return re.search('__version__ = [\'"]([^\'"]+)[\'"]', init_py).group(1)
 
 
-version = get_version('django_isomorphic')
+version = get_version('isomorphic')
 
 if sys.argv[-1] == 'publish':
     if os.system('pip freeze | grep wheel'):
@@ -35,7 +35,7 @@ if sys.argv[-1] == 'publish':
     print('  git push --tags')
     shutil.rmtree('dist')
     shutil.rmtree('build')
-    shutil.rmtree('django_isomorphic.egg-info')
+    shutil.rmtree('isomorphic.egg-info')
     sys.exit()
 
 

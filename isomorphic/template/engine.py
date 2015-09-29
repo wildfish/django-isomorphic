@@ -11,7 +11,7 @@ class JsEngine(Engine):
 
         # Set the default loader to the JS loader
         if loaders is None:
-            loaders = ['django_isomorphic.template.loaders.JsLoader']
+            loaders = ['isomorphic.template.loaders.JsLoader']
             if app_dirs:
                 loaders += ['django.template.loaders.app_directories.Loader']
                 app_dirs = False

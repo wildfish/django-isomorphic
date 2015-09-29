@@ -3,7 +3,7 @@ from django.template.backends.base import BaseEngine
 from django.template.engine import _dirs_undefined
 
 from ..client.template_client import TemplateClient
-from django_isomorphic.template.engine import JsEngine
+from ..template.engine import JsEngine
 
 
 class JsTemplates(BaseEngine):

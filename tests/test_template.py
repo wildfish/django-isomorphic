@@ -1,7 +1,7 @@
 from django.test import TestCase
 from django.conf import settings
-from django_isomorphic.template.backend import JsTemplate
-from django_isomorphic.template.loaders import JsLoader
+from isomorphic.template.backend import JsTemplate
+from isomorphic.template.loaders import JsLoader
 
 
 class FakeRequest():

@@ -19662,8 +19662,6 @@ var _fs2 = _interopRequireDefault(_fs);
 
 var _rendererReactReactTemplateRenderer = require('./renderer/react/react-template-renderer');
 
-var reactRendererPath = './renderer/react/react-template-renderer.js';
-
 var getArgsAsDict = function getArgsAsDict() {
     var commandArgs = {};
     if (process.argv.length > 2) {

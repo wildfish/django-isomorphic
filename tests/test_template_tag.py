@@ -1,7 +1,7 @@
 from django.template import RequestContext
 from django.test import TestCase
-from django_isomorphic.templatetags import djangojs
-from django_isomorphic.templatetags.djangojs import JsMissingTemplateDirException
+from isomorphic.templatetags import djangojs
+from isomorphic.templatetags.djangojs import JsMissingTemplateDirException
 
 
 class TestLoader(TestCase):
