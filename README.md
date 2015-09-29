@@ -161,8 +161,3 @@ change
 to
 
     <div id="stuff">{% include_js 'something.js' data=data %}</div>
-
-
-## TODO
-
-*  Mention ES6 help: babel src --out-dir ./transpiled --watch 
