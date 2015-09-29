@@ -20,10 +20,11 @@ It's possible to use the template as part of a Django template, or it can entire
 
 In a template:
 
-    {% load djangojs %}
-    ...
-    {% include_js 'foo.js' bar='hello' baz='world' %}
-
+```html
+{% load djangojs %}
+...
+{% include_js 'foo.js' bar='hello' baz='world' %}
+```
 
 ### Pure React components as templates
 
@@ -31,11 +32,13 @@ When using the react renderer, make sure the component is the default export
 
 e.g 
 
-    // ES6
-    export default class Foo extends React.Component { ... }
+```javascript
+// ES6
+export default class Foo extends React.Component { ... }
 
-    // CommonJS
-    module.exports = React.Component { ... }
+// CommonJS
+module.exports = React.Component { ... }
+```
 
 
 ## The template tag
