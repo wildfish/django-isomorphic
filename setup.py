@@ -35,18 +35,20 @@ if sys.argv[-1] == 'publish':
     print('  git push --tags')
     shutil.rmtree('dist')
     shutil.rmtree('build')
-    shutil.rmtree('isomorphic.egg-info')
+    shutil.rmtree('django_isomorphic.egg-info')
     sys.exit()
 
 
 setup(
     name='django-isomorphic',
+    setup_requires=['setuptools-markdown'],
+    long_description_markdown_filename='README.md',
     version=version,
     packages=find_packages(),
     include_package_data=True,
     license='BSD License',
     description=('A Django template backend for JavaScript.'),
-    long_description=README,
+    # long_description=README,
     url='https://github.com/wildfish/django-isomorphic',
     author='Jonas Hagstedt',
     author_email='jonas@wildfish.com',

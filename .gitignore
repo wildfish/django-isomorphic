@@ -5,6 +5,7 @@ MANIFEST
 demo/static/js/dist/
 docs/_build/
 build/
+dist/
 .coverage
 .tox
 .hypothesis
