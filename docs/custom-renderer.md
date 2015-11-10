@@ -18,7 +18,7 @@ An example custom template renderer:
 
 ```javascript
 var renderer = {
-    render: function(templatePath, contexti, request) {
+    render: function(templatePath, context, request) {
         return 'This is a custom template renderer';
     }
 };
